@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+    <%- include('partials/navfund.ejs') %>
+    <h1 class="text-center head">Beneficiary Details</h1>
+
+    <form id="register">
+        <div class="form-div">
+            
+            <input class="text-field" id="name" placeholder="Name" name="name" required>
+           </div>
+
+           <div class="form-div select">
+
+                  
+            <label class="text-label" for="cause">I am raising funds for a/an </label>
+
+            <select style = "width: 100%;padding: .5rem;border-radius: 1rem;background-color: rgb(236, 236, 241);" name="year" id="cause" required>
+              <option value="COVID-19">COVID-19</option>
+              <option value="Medical">Medical</option>
+              <option value="Education">Education</option>
+              <option value="Others">Others</option>
+            </select>
+            
+          </div>
+          <div class="form-div">
+                  
+            <input class="text-field" id="email" placeholder="Email" type="email" name="email" required>
+           </div>
+
+           <div class="form-div">
+            <input class="text-field" id="phone" type="number" name="phone" placeholder="Phone Number" pattern="^\d{10}$" required>
+          </div>
+           <div class="form-div">
+            <input class="text-field" id="city" type="text" name="city" placeholder="Enter Your City" required>
+          </div>
+          <div class="form-div">
+            <input class="text-field" id="state" type="text" name="state" placeholder="Enter Your State" required>
+          </div>
+           <div class="form-div">
+            <input class="text-field" id="tag" type="text" name="tag" placeholder="Give the tag line for the cause" required>
+          </div>
+
+          <div class="form-div">
+            <input class="text-field" id="money" type="number" name="tag" placeholder="How much do you want to raise" required>
+          </div>
+          <div class="form-div">
+            <input class="text-field" id="money1" type="number" name="tag" placeholder="Please enter again your raise amount" required>
+          </div>
+
+          <div class="form-div">
+              <textarea name="message" class="text-field" id="description" cols="50" rows="10" placeholder="Enter the short description of your cause..."></textarea required>
+          </div>
+
+          <div class="form-div">
+          <input type="file" id="photo" required>
+          
+          <!-- <button onclick="uploadImage()">Upload Image</button> -->
+          </div>
+          <div class="form-div" style="margin-left: 18rem;">
+            <Label>Upload Medical Certificate: </Label>
+          <input type="file" id="certificate"required>
+          
+          <!-- <button onclick="uploadImage()">Upload Image</button> -->
+          </div>
+          
+
+          <button id="btn1" type="submit">
+            Register
+          </button>
+    </form>
+    <%- include('partials/footer.ejs') %>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js"></script> 
+    <script src="/js/firebase.js"></script>
+</body>
+</html>
+
+<!-- D50219926A8CE84ED30A46517D2E2EA15283-password -->
+<!-- f90ec43f-57ef-4025-b2b3-025e914cf220-security token -->
+
+<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odio corrupti voluptatem ipsam odit doloribus quae! Iure rem quae minus, beatae aliquid in est tempora qui illum hic velit odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio ipsam veniam, autem eius enim incidunt at doloremque reprehenderit corrupti corporis repudiandae quos laboriosam ipsa beatae ab voluptate facilis aperiam. Dolorem. -->

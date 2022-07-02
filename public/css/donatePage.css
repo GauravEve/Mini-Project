@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.dropdown-item:active{
+  background-color: rgb(180, 169, 187) !important;
+}
+.navbar{
+  /* background: linear-gradient(to bottom,rgb(228, 228, 228),rgb(255, 255, 255)) !important; */
+  background-color: #f7f7f7 !important;
+  box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .2);
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 10000;
+ 
+}
+.navbar-transparent{
+  background: linear-gradient(to bottom,rgba(228, 228, 228, 0.694),rgba(255, 255, 255, 0.694)) !important;
+  transition: .5s ease-in;
+}
+.navbar:hover{
+  background-color: white;
+}
+.nav-item a.nav-link{
+  font-size: 18px;
+  color:black !important ;
+  margin-left: 2rem !important;
+}
+.navbar .navbar-brand{
+  font-weight: 500;
+}
+.nav-item a:hover{
+  color:rgb(187, 178, 206) !important ;
+}
+.nav-logo{
+  border-radius: 50%;
+  padding: 5px;
+}
+.navbar-light .navbar-toggler{
+  border: none;;
+}
+.navbar-light .navbar-toggler:focus{
+  outline: none;
+}
+
+.donate-grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.donate-grid .donate-1 .progress{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 705px;
+  height: 136px;
+  margin-top: 1rem;
+  background: white;
+}
+
+.donate-grid .donate-1 .progress .money{
+  padding-left: 1rem;
+  padding-top: 2rem;
+  font-weight: bolder;
+  font-size: 38px;
+}
+.circle-wrap {
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+    /* background: #fefcff; */
+    border-radius: 50%;
+    /* border: 1px solid #cdcbd0; */
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+      /* width: 150px;
+      height: 150px; */
+      width: 126px;
+      height: 128px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    /* width: 122px;
+    height: 122px; */
+    width: 118px;
+    height: 114px;
+    border-radius: 50%;
+    background: #d2eaf1;
+    line-height: 119px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: #1e51dc;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+.donate-grid .donate-1 .img1{
+    width: 89.5%;
+    height: 450px;
+    border-radius: 8px;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.donate-grid .donate-1 .para1{
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.donate-grid .pay{
+    width: 50%;
+    box-shadow: 0 4px 10px 0 rgb(156 51 83 / 30%);
+    border-radius: 8px;
+    margin-top: 3rem;
+    margin-left: 16rem;
+    /* border: 2px solid red; */
+    height: 80vh;
+}
+
+.donate-grid .pay .btn-1{
+    /* width: 42%;
+    height: 34px;*/
+    margin-top: 10rem;
+    margin-left: 6rem; 
+    width: 200px !important;
+    background: #9c3353 !important;
+    color: #fff !important;
+    font-size: 20px !important;
+    padding: 15px 10px !important;
+    font-weight: normal !important;
+    border-radius: 30px !important;
+}
+.head{
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    width: 80%;
+    border: 1px solid #e0e1e3;
+    border-top: none;
+    background: hsla(210,4%,89%,.2);
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    line-height: 50px;
+}
+
+.head2{
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.head-1{
+    padding-left: 2rem;
+}
+
+.line{
+    margin-top: 4rem;
+    border-left: 4px solid rgb(199, 12, 12);
+    padding-left: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.download{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.download .share{
+  color: white;
+  border-radius: 24px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  width: 96%;
+  padding-top: 0;
+  margin-left: 3rem;
+  background-color: #25d366;
+  text-align: center;
+  text-decoration: none;
+}
+
+.share:hover{
+  color: black;
+  background-color: #21e469;
+}
+
+.download .dcert{
+  margin-left: 3rem;
+  background: black;
+  color: white;
+  border-radius: 24px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  width: 96%;
+  padding-top: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dcert:hover{
+  color: black;
+  background: rgb(112, 110, 110);
+}
+
+.community{
+  /* background-color: #1e51dc; */
+  background: rgb(185, 12, 41);
+  margin-top: 4rem;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 5rem;
+}
+
+.community h3{
+  padding-top: 0.5rem;
+}
+
+
+.socialte{
+  border: 2px solid #fff;
+  padding: 0px 10px 0 5px;
+  border-radius: 8px;
+  margin-right: 10px;
+  width: 280px;
+  margin-top: 1.5rem;
+}
+
+.socialte a{
+  text-decoration: none;
+}
+
+.innerte{
+  color: white;
+}
+
+.innerte .social-iconte{
+  /* background: url(	https://pages.milaap.org/wp-content/uploads/2022/02/telegram-icon.png); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 234px !important;
+  height: 64px !important;
+  /* display: inline-block; */
+}
+
+.social-iconte .mediate{
+  margin-left: 2rem;
+  font-size: 30px;
+}
+
+.social-iconte .icon-telegram{
+  background-color: #fff;
+  color: #1e51dc;
+  font-size: 50px;
+  border-radius: 50%;
+}
+
+.c{
+  text-align: center;
+  margin-left: 4rem;
+  font-size: 18px;
+  color: black;
+  margin-top: 2rem;
+}
+
+.person{
+  border: 2px solid #e0e1e3;
+    background: #fff;
+    width: 176px;
+    padding: 11px;
+    height: 120px;
+    margin-left: 5rem;
+    letter-spacing: 1px;
+}
+
+.story{
+  margin-top: 2rem;
+  margin-left: 5rem;
+  width: 200px !important;
+  background: #9c3353 !important;
+  color: #fff !important;
+  font-size: 20px !important;
+  padding: 15px 72px !important;
+  font-weight: normal !important;
+  border-radius: 30px !important
+}
